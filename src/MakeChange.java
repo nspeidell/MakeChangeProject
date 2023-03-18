@@ -21,7 +21,7 @@ public class MakeChange {
 		int countN = 0;
 		int countP = 0;
 
-		if (cashTendered == itemPrice) {
+		if (cashTendered % itemPrice == 0) {
 				// (Math.abs(cashTendered - itemPrice) < Math.ulp(itemPrice))
 			System.out.println("Customer used exact change");
 		} else if (cashTendered < itemPrice) {
@@ -58,30 +58,33 @@ public class MakeChange {
 				}
 
 			}
+			System.out.println("Amount: " + itemPrice);
+			System.out.println("Tendered: " + cashTendered);
+			System.out.println("Please return the following change:");
 		}
 		if (count20 > 0) {
-			System.out.println("Twenties " + count20);
+			System.out.println(count20 + " : Twenty dollar bills");
 		}
 		if (count10 > 0) {
-			System.out.println("Tens " + count10);
+			System.out.println(count10 + " : Ten dollar bills");
 		}
 		if (count5 > 0) {
-			System.out.println("Fives " + count5);
+			System.out.println(count5 + " : Five dollar bills");
 		}
 		if (count1 > 0) {
-			System.out.println("Ones " + count1);
+			System.out.println(count1 + " : One dollar bills");
 		}
 		if (countQ > 0) {
-			System.out.println("Quarters " + countQ);
+			System.out.println(countQ + " : Quarters");
 		}
 		if (countD > 0) {
-			System.out.println("Dimes " + countD);
+			System.out.println(countD + " : Dimes");
 		}
 		if (countN > 0) {
-			System.out.println("Nickels " + countN);
+			System.out.println(countN + " : Nickels");
 		}
 		if (countP > 0) {
-			System.out.println("Pennies " + countP);
+			System.out.println(countP + " : Pennies");
 		}
 	}
 
