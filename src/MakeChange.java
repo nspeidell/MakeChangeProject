@@ -22,7 +22,6 @@ public class MakeChange {
 		int countP = 0;
 
 		if (cashTendered % itemPrice == 0) {
-				// (Math.abs(cashTendered - itemPrice) < Math.ulp(itemPrice))
 			System.out.println("Customer used exact change");
 		} else if (cashTendered < itemPrice) {
 			System.out.println("Error: Customer did not give enough money");
