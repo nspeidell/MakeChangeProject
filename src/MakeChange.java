@@ -52,7 +52,7 @@ public class MakeChange {
 					countP++;
 					remainingChange -= 0.01;
 				} else {
-					//(remainingChange >= 0.001) 
+					// (remainingChange >= 0.001)
 					remainingChange += 0.005;
 				}
 
@@ -88,4 +88,3 @@ public class MakeChange {
 	}
 
 }
-
